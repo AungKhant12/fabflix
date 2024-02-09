@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="css/main-page.css">
+  
+  <title>Fabflix Main Page</title>
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="nav-bar-container">
+      <a href="cart.html">Checkout</a>
+
+      <input
+        type="text"
+        name="movieTitleFulltextQuery"
+        id="movie-title-fulltext-search"
+        class="movie-title-fulltext-search"
+        placeholder="Search Movie Titles"
+      >
+    </div>
+
+    <div class="search-browse-container">
+      Search for Film:
+      <form id="search-form" action="index.html" method="get">
+        <label for="movie-title-input">Movie: </label>
+        <input type="text" id="movie-title-input" name="movieTitle">
+
+        <label for="movie-year-input">Year: </label>
+        <input type="number" id="movie-year-input" name="movieYear">
+
+        <label for="movie-director-input">Director: </label>
+        <input type="text" id="movie-director-input" name="movieDirector">
+
+        <label for="star-name-input">Star Name: </label>
+        <input type="text" id="star-name-input" name="starName">
+
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <div class="genre-browse-container">
+      <div class="genre-browse-label">Browse by Genre:</div>
+      <div class="genre-container"></div>
+    </div>
+
+    <div class="title-browse-container">
+      <div class="title-browse-label">Browse by Title:</div>
+      <div class="start-letter-container"></div>
+    </div>
+  </div>
+
+  <!-- jQuery & autocomplete -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+
+  <!-- custom JS -->
+  <script src="js/main-page.js"></script>
+</body>
+</html>

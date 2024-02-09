@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  
+
+  <title>PaymentServlet</title>
+</head>
+
+<body>
+  <h2 class="enter-billing-header">Enter Billing Information:</h2>
+
+  <label for="first-name-input">First Name:</label>
+  <input type="text" id="first-name-input" name="first-name">
+
+  <label for="last-name-input">Last Name:</label>
+  <input type="text" id="last-name-input" name="last-name">
+
+  <label for="credit-card-input">Credit Card Number:</label>
+  <input type="text" id="credit-card-input" name="credit-card">
+
+  <label for="expiration-date-input">Expiration Date:</label>
+  <input type="text" id="expiration-date-input" name="expiration-date">
+
+  <button onclick="sendPayment()">Place Order</button>
+
+  <h3 class="subtotal-label">Subtotal:</h3>
+  <span class="subtotal-field"></span>
+
+  <!-- jQuery & custom JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+  
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="css/index.css">
+  
+  <title>Fabflix Home Page</title>
+</head>
+
+<body>
+  <div class="nav-bar-container">
+    <div class="full-text-search-container">
+      <input
+        type="text"
+        name="movieTitleFulltextQuery"
+        id="movie-title-fulltext-search"
+        class="movie-title-fulltext-search"
+        placeholder="Search Movie Titles"
+      >
+    </div>
+  </div>
+
+  <div class="search-browse-container">
+    <a href="main-page.html">Back to Searching and Browsing</a>
+    <br>
+    <a href="cart.html">Checkout</a>
+    <br>
+
+    <form id="search-form" action="index.html" method="get">
+      Sort primarily by:
+      <input type="radio" id="sort-priority-rating" name="sortPriority" value="rating" checked>
+      <label for="sort-priority-rating">Rating</label>
+      <input type="radio" id="sort-priority-title" name="sortPriority" value="title">
+      <label for="sort-priority-title">Title</label>
+      <br>
+      Sort Rating:
+      <input type="radio" id="sort-rating-desc" name="ratingOrder" value="desc" checked>
+      <label for="sort-rating-desc">Desc</label>
+      <input type="radio" id="sort-rating-asc" name="ratingOrder" value="asc">
+      <label for="sort-rating-asc">Asc</label>
+      <br>
+      Sort Title:
+      <input type="radio" id="sort-title-desc" name="titleOrder" value="desc" checked>
+      <label for="sort-title-desc">Desc</label>
+      <input type="radio" id="sort-title-asc" name="titleOrder" value="asc">
+      <label for="sort-title-asc">Asc</label>
+      <br>
+      Number of Movies Per Page:
+      <select name="limit">
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+      </select>
+      <button>Submit</button>
+    </form>
+  </div>
+
+  <div class="pagination-container">
+
+  </div>
+
+  <table id="movies_table" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Director</th>
+        <th>Stars</th>
+        <th>Genres</th>
+        <th>Rating</th>
+        <th>Cart</th>
+      </tr>
+    </thead>
+
+    <!-- Filled by index.js -->
+    <tbody id="movie_table_body"></tbody>
+  </table>
+  
+  <!-- JQuery & autocomplete -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+
+  <!-- custom JS -->
+  <script src="js/index.js"></script>
+</body>
+</html>

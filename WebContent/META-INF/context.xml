@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!-- master instance connection -->
+<!--    <Resource-->
+<!--        name="jdbc/master"-->
+<!--        auth="Container"-->
+<!--        driverClassName="com.mysql.cj.jdbc.Driver"-->
+<!--        factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"-->
+<!--        type="javax.sql.DataSource"-->
+<!--        username="mytestuser"-->
+<!--        password="My6$Password"-->
+<!--        url="jdbc:mysql://172.31.13.78:3306/moviedb?autoReconnect=true&amp;useSSL=false&amp;cachePrepStmts=true"-->
+<!--    />-->
+
+    <!-- localhost moviedb connection Defines a Data Source Connecting to localhost moviedbexample-->
+    <Resource
+        name="jdbc/moviedb"
+        auth="Container"
+        driverClassName="com.mysql.cj.jdbc.Driver"
+        type="javax.sql.DataSource"
+        username="mytestuser"
+        password="My6$Password"
+        url="jdbc:mysql://localhost:3306/moviedb"
+    />
+
+    <!--        factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"-->
+    <!--        maxTotal="100" maxIdle="30" maxWaitMillis="10000"-->
+
+    <!--        factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"-->
+    <!--        maxTotal="100" maxIdle="30" maxWaitMillis="10000"-->
+
+<!--    url="jdbc:mysql://localhost:3306/moviedb?autoReconnect=true&amp;allowPublicKeyRetrieval=true&amp;useSSL=false&amp;cachePrepStmts=true"-->
+</Context>

@@ -1,0 +1,49 @@
+html, body,
+tr, th, td {
+    background: black;
+    color: white;
+}
+
+.nav-bar-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.movie-title-fulltext-search {
+    width: 400px;
+}
+
+.table thead th {
+    border-bottom-color: rgb(42, 48, 50);
+}
+
+tr, th, td {
+    border-top-color: rgb(75, 84, 87);
+    border-bottom-color: rgb(75, 84, 87);
+    border-left: none;
+    border-right: none;
+}
+
+th {
+    text-align: center;
+}
+
+.table td,
+.table th {
+    border-top-color: rgb(42, 48, 50);
+}
+
+.genre-button {
+    border: 1px solid #303030;
+    border-radius: 100px;
+    color: white;
+    background: #303030;
+    padding: 7px 15px;
+    margin-right: 5px;
+}
+
+.genre-button:hover {
+    cursor: pointer;
+}

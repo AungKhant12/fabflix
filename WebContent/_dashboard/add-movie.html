@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="add-movie.css">
+    <title>Add Movie</title>
+</head>
+<body>
+<a href="dashboard.html">Dashboard</a>
+<a href="add-star.html">Add Star</a>
+<div class="page-container">
+    <div class="add-star-banner">
+        <h2>Add a Movie</h2>
+    </div>
+
+    <div class="add-movie-form-container">
+        <form id="add_movie_form" method="post" action="#">
+            <label for="title-input">Movie Title:</label>
+            <input id="title-input" name="title" placeholder="Enter Movie Title" type="text">
+            <br>
+            <label for="year-input">Movie Year:</label>
+            <input id="year-input" name="year" placeholder="Enter Movie Year" type="text">
+            <br>
+            <label for="director-input">Movie Director:</label>
+            <input id="director-input" name="director" placeholder="Enter Movie Director" type="text">
+            <br>
+            <label for="star-input">Star Name:</label>
+            <input id="star-input" name="star" placeholder="Enter Star Name" type="text">
+            <br>
+            <label for="genre-input">Movie Genre:</label>
+            <input id="genre-input" name="genre" placeholder="Enter Movie Genre" type="text">
+            <br>
+            <input type="submit" value="Add Movie">
+        </form>
+    </div>
+
+    <div class="response-message-container">
+        <div id="response_message"></div>
+    </div>
+</div>
+
+<!-- import jQuery & user scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./add-movie.js"></script>
+</body>
+</html>
