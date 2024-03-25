@@ -10,20 +10,25 @@
 </head>
 
 <body>
+  <!-- Page's Content -->
   <div class="page-container">
     <div class="login-banner">
-      <h2>Fabflix Login</h2>
+      <h1>Log in to Fabflix</h1>
     </div>
 
     <div class="login-form-container">
       <form id="login_form" method="post" action="#">
         <label for="username-input">Username:</label>
         <input id="username-input" name="username" placeholder="Enter Username" type="text">
+        
         <br>
+
         <label for="password-input">Password:</label>
         <input id="password-input" name="password" placeholder="Enter Password" type="password">
+        
         <br>
-        <input type="submit" value="Login">
+        
+        <input class="login-button" type="submit" value="Login">
         <div class="g-recaptcha" data-sitekey="6LcWcw4pAAAAAGlGiqHup7N7hDq5yUjJowxQaKMZ"></div>
       </form>
     </div>
